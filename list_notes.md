@@ -130,45 +130,55 @@ l = [*range(5)]
 print(l)  # Output: [0, 1, 2, 3, 4]
 ```
 # List constructor
-```l = list('hello')
+```
+l = list('hello')
 print(l)  # Output: ['h', 'e', 'l', 'l', 'o'] 
 ```
 
 # List comprehension
-- Syntax: [expression for variable in iterable]
-```l = [x for x in range(5)]
+Syntax: [expression for variable in iterable]
+```
+l = [x for x in range(5)]
 print(l)  # Output: [0, 1, 2, 3, 4] 
 ```
 ## List comprehension with condition
-```l = [x for x in range(10) if x % 2 == 0]
+```
+l = [x for x in range(10) if x % 2 == 0]
 print(l)  # Output: [0, 2, 4, 6, 8] 
 ```
 ## List comprehension with nested loops
-```l = [x * y for x in range(3) for y in range(3)]
+```
+l = [x * y for x in range(3) for y in range(3)]
 print(l)  # Output: [0, 0, 0, 0, 1, 1, 1, 2, 2, 2]  
 ```
 ## List comprehension with if-else
-```l = [x if x % 2 == 0 else -x for x in range(5)]
+```
+l = [x if x % 2 == 0 else -x for x in range(5)]
 print(l)  # Output: [0, -1, 2, -3, 4]
 ```
 ## List comprehension with function call
-```l = [str(x) for x in range(5)]
+```
+l = [str(x) for x in range(5)]
 print(l)  # Output: ['0', '1', '2', '3', '4']   
 ```
 ## List comprehension with multiple conditions
-```l = [x for x in range(10) if x % 2 == 0 and x > 2]
+```
+l = [x for x in range(10) if x % 2 == 0 and x > 2]
 print(l)  # Output: [4, 6, 8]   
 ```
 ## List comprehension with nested lists
-```l = [[x, x + 1] for x in range(5)]
+```
+l = [[x, x + 1] for x in range(5)]
 print(l)  # Output: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]    
 ```
 ## List comprehension with function call and condition
-```l = [x**2 for x in range(10) if x % 2 == 0]
+```
+l = [x**2 for x in range(10) if x % 2 == 0]
 print(l)  # Output: [0, 4, 16, 36, 64, 100]
 ```
 ## List comprehension with multiple nested loops
-```l = [x * y for x in range(3) for y in range(3)]
+```
+l = [x * y for x in range(3) for y in range(3)]
 print(l)  # Output: [0, 0, 0, 0, 1, 1, 1, 2, 2, 2]
 ```
 
