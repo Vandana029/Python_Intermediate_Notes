@@ -25,3 +25,5 @@ print(len(my_list))  # Output: 2
 # print all elements in my_list
 for i in my_list:
     print(i)  # Output: A, B
+
+
