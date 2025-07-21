@@ -114,3 +114,21 @@ str1[7:13:1] means start at index 7, end before index 13, and take every charact
 | Ignoring `.find()` vs `.index()` | `.find()` returns `-1`, `.index()` throws error |
 | Forgetting string immutability   | Think “new string” always                       |
 
+# NOTE: Why avoid ‘+’ in loops?
+Using `+` in loops creates a new string each time, leading to O(n^2) complexity.
+Better alternative → use `''.join(list_of_strings)` which is O(n)
+
+# Difference: `.find()` vs `.index()`
+`.find()` returns `-1` if substring not found.
+`.index()` raises `ValueError`.
+
+```
+"abc".find("z")    # -1
+"abc".index("z")   # ValueError
+```
+
+# Case-insensitive Comparison
+```
+"Cat" == "cat"  # False
+"Cat".lower() == "cat".lower()  # True
+```

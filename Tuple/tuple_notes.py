@@ -366,3 +366,64 @@ print(sum(t))
 # Note: Generators are iterators that produce values on-the-fly and can only be iterated once. After the first iteration, they are exhausted.
 
 
+########################################################################################
+# Coding Challenges
+
+# 1. Swap Two Values Using Tuple Unpacking
+a, b = 5, 10
+a, b = b, a
+print(a, b)  # 10 5 
+
+# 2. Count Occurrences
+t = (1, 5, 3, 5, 5, 7)
+print(t.count(5))  # Output: 3 
+
+# 3. Concatenate Two Tuples
+t1 = (1, 2)
+t2 = (3, 4)
+result = t1 + t2
+print(result)  # (1, 2, 3, 4) 
+
+# 4. Maximum in Tuple
+def max_in_tuple(t):
+    return max(t)
+
+print(max_in_tuple((3, 5, 1, 9)))  # 9 
+
+# 5.List of Tuples to Dictionary
+lst = [('a', 1), ('b', 2), ('c', 3)]
+d = dict(lst)
+print(d)  # {'a': 1, 'b': 2, 'c': 3} 
+## dict() converts list of key-value tuples
+
+# 6. Tuple Comprehension Trap
+x = (i for i in range(3))
+print(type(x))  # <class 'generator'> 
+## There’s no tuple comprehension.this creates a generator.
+
+## Correct way to get tuple
+x = tuple(i for i in range(3))
+
+# 7. Access Nested Element
+t = (1, (2, 3), (4, (5, 6)))
+print(t[2][1][1])  # 6 
+
+# 8. Flatten One-Level Nested Tuple
+def flatten_one_level(t):
+    result = []
+    for i in t:
+        if isinstance(i, tuple):
+            result.extend(i)
+        else:
+            result.append(i)
+    return tuple(result)
+
+print(flatten_one_level((1, (2, 3), 4)))  # (1, 2, 3, 4) 
+
+
+
+
+
+
+
+# Convert List of Tuples to Dictionary
