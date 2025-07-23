@@ -117,7 +117,7 @@ print([f() for f in funcs])  # [2, 2, 2]
 **Corrected Version: Using Default Argument**
 ```
 funcs = [lambda i=i: i for i in range(3)]
-print([f() for f in funcs])  # [0, 1, 2
+print([f() for f in funcs])  # [0, 1, 2]
 ```
 Which is equivalent to:
 ```

@@ -1,4 +1,5 @@
 ## Example 1
+'''
 def example(a, b=2, *args, **kwargs):
     print(a, b, args, kwargs)
 
@@ -15,7 +16,7 @@ print(x)  # 20
 
 ## Example 3 (Mutable Default Argument)
 '''
-Default mutable args persist across calls
+#Default mutable args persist across calls
 '''
 def append_list(val, lst=[]):
     lst.append(val)
@@ -31,7 +32,7 @@ def append_list(val, lst=None):
 
 ## Example 3. Nested Functions & Closures
 '''
-Inner function remembers variables even after outer function exits.
+#Inner function remembers variables even after outer function exits.
 '''
 def outer(x):
     def inner(y):
@@ -43,8 +44,8 @@ print(f(3))  # 8
 
 ## Example  4. Lambda Functions
 '''
-Anonymous, single-expression functions.
-Late Binding: Captures last value of loop variable.
+# Anonymous, single-expression functions.
+# Late Binding: Captures last value of loop variable.
 '''
 add = lambda x, y: x + y
 print(add(2, 3))  # 5
@@ -58,7 +59,7 @@ print([f() for f in funcs])  # [0, 1, 2]
 
 ## Example 5. Decorators (Basic Intro)
 '''
-Function that modifies another function.
+#Function that modifies another function.
 '''
 def decorator(func):
     def wrapper():
@@ -114,8 +115,8 @@ print(counter())  # 2
 
 ## Example 8. Closure
 '''
-A closure happens when the inner function remembers the outer function’s variable even after the outer function is done.
-Real-Life Use: Data encapsulation, decorators, function factories.
+# A closure happens when the inner function remembers the outer function’s variable even after the outer function is done.
+# Real-Life Use: Data encapsulation, decorators, function factories.
 '''
 def multiplier(x):
     def multiply(y):
@@ -125,5 +126,5 @@ def multiplier(x):
 double = multiplier(2)
 print(double(5))  # 10 
 # Even though multiplier() has finished running, double() retains access to x = 2.
-
+'''
 
