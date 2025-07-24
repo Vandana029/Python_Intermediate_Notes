@@ -16,3 +16,6 @@
 - Global variable
 
 **NOTE**: There is no `static` keyword in Python. 
+
+# Create and Access Instance/Class Object Variables
+![alt text](access_obj_var.png)
